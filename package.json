@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"description": "Pacote piloto para validar o pipeline da central",
 	"license": "MIT",
-	"homepage": "https://github.com/PENDENTE/n8n-nodes-exemplo#readme",
+	"homepage": "https://github.com/JuaoPedr0/n8n-nodes-exemplo#readme",
 	"keywords": [
 		"n8n-community-node-package",
 		"n8n"
@@ -14,10 +14,10 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/PENDENTE/n8n-nodes-exemplo.git"
+		"url": "git+https://github.com/JuaoPedr0/n8n-nodes-exemplo.git"
 	},
 	"bugs": {
-		"url": "https://github.com/PENDENTE/n8n-nodes-exemplo/issues"
+		"url": "https://github.com/JuaoPedr0/n8n-nodes-exemplo/issues"
 	},
 	"publishConfig": {
 		"access": "public"
