@@ -1,6 +1,6 @@
 {
 	"name": "@conasa/n8n-nodes-exemplo",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Pacote piloto para validar o pipeline da central",
 	"license": "MIT",
 	"homepage": "https://github.com/JuaoPedr0/n8n-nodes-exemplo#readme",
