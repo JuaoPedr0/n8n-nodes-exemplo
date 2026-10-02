@@ -55,6 +55,8 @@
 name: Publish
 
 on:
+  # Permite republicar manualmente a versao atual da main (Actions > Publish > Run workflow)
+  workflow_dispatch:
   push:
     tags:
       # Matches 0.1.0, 1.2.3, 2.0.0-rc.1, etc.
@@ -97,3 +99,8 @@ jobs:
           npm run release
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Show npm OIDC diagnostics
+        # Em falha, mostra por que a troca OIDC (Trusted Publisher) nao autenticou.
+        if: failure()
+        run: grep -h -i -E 'oidc|trusted|exchange' ~/.npm/_logs/*.log || echo "sem linhas de OIDC nos logs do npm"
